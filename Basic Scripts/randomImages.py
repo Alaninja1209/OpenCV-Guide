@@ -2,6 +2,17 @@ import cv2
 import numpy
 import os
 
+img = cv2.imread('OpenCV/MyPic.png')
+
+#Tuple describing shape of image (height, width, channels -> If is BGR)
+print(img.shape)
+
+#Number of elements in the array
+print(img.size)
+
+#Data type of array's elements, 8 bit-per-channel 
+print(img.dtype)
+
 #image[0, 0, 0] or image[0, 0]. First index "y" coordinates, second index "x" coordinates, third index color channel
 
 #Creating an array of 120,000 random bytes
