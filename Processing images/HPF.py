@@ -14,6 +14,7 @@ img = cv2.imread("OpenCV/Chapter2/tigerCV.jpg", 0)
 k3 = ndimage.convolve(img, kernel_3x3)
 k5 = ndimage.convolve(img, kernel_5x5)
 
+#Low pass filter that attenuates the intensity of high-frequency signals
 blurred = cv2.GaussianBlur(img, (17, 17), 0)
 g_hpf = img - blurred
 
